@@ -118,11 +118,22 @@ print(y)
 i = [6, 10, 75, 60, 55]
  #   0   1   2   3   4 
 
-print(i[0])
+new_list = i[0], i[-1]
+make_new_list = list(new_list)
+print(make_new_list)
 
 
+#Input: x = 121
+#Output: true
+#Explanation: 121 reads as 121 from left to right and from right to left.
 
+enter = list(input("x = "))
+i = enter[-1]
 
+if enter[0] == i:
+    print('true')
+else:
+    print("false")
 
 
 
